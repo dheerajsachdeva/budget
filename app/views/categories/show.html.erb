@@ -1,0 +1,11 @@
+<h2>Category with Transaction Page</h2>
+<%= "Total Expenses: #{@total}" %>
+<% @payments.each do |transaction| %>
+<%= transaction.name %>
+<%= transaction.amount %>
+<%=image_tag(@category.icon, options = {size: 50})%>
+<%end%>
+
+<button class="btn_add_recipe btn btn-primary">
+    <%= link_to 'Add Transaction', new_category_payment_path(params[:id]), class: "text-white" %>
+  </button>

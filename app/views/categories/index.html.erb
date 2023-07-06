@@ -1,0 +1,39 @@
+<h2>Categories</h2>
+
+<h1><%="Welcome #{current_user.name}"%></h1>
+<%if @categories.size%>
+<div class="container"style="width: 800px; margin-top: 20px;">
+<% @categories.each do |category| %>
+  <div class="card mb-3">
+    <div class="img-fluid h-100 w-100 card-header d-flex justify-content-between align-items-center">
+      <%= image_tag(category.icon, class: "img-fluid", style: "width: 50px; height: 50px;" )%>
+       <%
+=begin%>
+ <%= category.payments.sum(:amount) %> 
+<%
+=end%>
+      </div>
+    <div class="row g-0">
+    <%= link_to category.name, category_path(category.id) %>
+      <div class="col-md-8">
+       
+        <div class="card-body">
+        <% if current_user.present? && can?(:destroy, category) %>
+        <%= button_to "Remove", category_path(category.id), method: :delete, data: { confirm: "Are you sure?" }, class: 'btn btn-danger btn-sm ml-2' %>
+      <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
+ 
+<%else%>
+<p>Please add some Categories first</p>
+ <%end%>
+  <button class="btn_add_recipe btn btn-primary">
+    <%= link_to 'Add Category', new_category_path, class: "text-white" %>
+  </button>
+ 
+</div>
+
+
