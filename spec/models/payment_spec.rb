@@ -8,7 +8,6 @@ RSpec.describe Payment, type: :model do
     @payment = Payment.new(name: 'test', amount: 100)
   end
 
-
   describe 'validate data' do
     it 'it should have a name' do
       @payment.name = nil

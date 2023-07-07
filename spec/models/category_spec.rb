@@ -6,7 +6,6 @@ RSpec.describe Category, type: :model do
     @category = Category.new(name: 'test', icon: Rack::Test::UploadedFile.new('spec/support/image.jpg', 'image/jpg'))
   end
 
-
   describe 'validate data' do
     it 'it should have a name' do
       @category.name = nil
