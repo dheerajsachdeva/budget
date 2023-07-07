@@ -9,10 +9,10 @@ class PaymentsController < ApplicationController
 
   def create
     @payment = Payment.new(name: payment_params[:name], amount: payment_params[:amount])
-    
+
     @payment.author_id = current_user.id
     if @payment.save
-      category_payment = CategoryPayment.create(payment: @payment,category_id: payment_params[:category_id])
+      CategoryPayment.create(payment: @payment, category_id: payment_params[:category_id])
       flash[:success] = 'Payment succesfully added'
       redirect_to category_path(payment_params[:category_id])
     else
