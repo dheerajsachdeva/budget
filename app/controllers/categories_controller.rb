@@ -1,31 +1,30 @@
 class CategoriesController < ApplicationController
-    before_action :authenticate_user!
+  before_action :authenticate_user!
 
-    def index
-        @categories = current_user.categories
+  def index
+    @categories = current_user.categories
   end
 
   def show
     @category = Category.find(params[:id])
     @total = @category.payments.sum(:amount)
     @payments = @category.payments.order(created_at: :desc)
-    end
+  end
 
-      def new
-        @category = Category.new
-      end
-
+  def new
+    @category = Category.new
+  end
 
   def create
     @category = Category.new(category_params)
     @category.author_id = current_user.id
     if @category.save
-        flash[:success] = 'Category succesfully added'
-        redirect_to categories_path
-      else
-        flash[:error] = 'Error: Category could not be added'
-        render :new
-      end
+      flash[:success] = 'Category succesfully added'
+      redirect_to categories_path
+    else
+      flash[:error] = 'Error: Category could not be added'
+      render :new
+    end
   end
 
   def destroy
@@ -41,6 +40,4 @@ class CategoriesController < ApplicationController
   def category_params
     params.require(:category).permit(:name, :icon)
   end
-
-
-  end
+end

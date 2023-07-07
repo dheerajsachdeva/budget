@@ -1,8 +1,5 @@
-# frozen_string_literal: true
-
 class Users::Sessions::RegistrationsController < Devise::RegistrationsController
-
-  def after_sign_up_path_for(resource)
+  def after_sign_up_path_for(_resource)
     categories_path
   end
   # before_action :configure_sign_up_params, only: [:create]

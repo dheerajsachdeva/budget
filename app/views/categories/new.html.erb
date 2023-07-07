@@ -23,11 +23,11 @@
   
   
   <%= form.label :icon, class:"form-label mt-3" %>
-   <%= form.file_field :icon, class:"form-control" %>
+   <%= form.file_field :icon, class:"form-control", id: "category_icon" %>
     
-  
-  <%= form.submit class: 'container-md btn btn-success btn-lg fixed-bottom' %>
-  
+  <button class = "submit">
+  <%= form.submit "Create", class: 'container-md btn btn-success btn-lg fixed-bottom' %>
+  </button>
  <% end %>
 
 </section>
