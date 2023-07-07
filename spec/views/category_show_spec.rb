@@ -8,9 +8,9 @@ RSpec.describe 'Categories', type: :feature do
       sign_in @user
       icon_file = fixture_file_upload('spec/support/image.jpg', 'image/jpeg')
       @category = Category.create(author: @user, name: 'Food', icon: icon_file)
-      @payment = Payment.create(author: @user, name: 'Pizza', amount: 50, category_id: @category.id)
+      @payment = Payment.create(author: @user, name: 'Pizza', amount: 50)
       @category.payments << @payment
-      @payment.categories << @category
+    #   @payment.categories << @category
       @total = @category.payments.sum(:amount)
       visit category_path(@category.id)
     end

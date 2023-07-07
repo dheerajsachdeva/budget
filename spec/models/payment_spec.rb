@@ -5,7 +5,7 @@ RSpec.describe Payment, type: :model do
     @user = User.create(name: 'test', password: 'testpass', email: 'test@test.com')
     icon_file = fixture_file_upload('spec/support/image.jpg', 'image/jpeg')
     @category = Category.create(author: @user, name: 'Food', icon: icon_file)
-    @payment = Payment.new(name: 'test', amount: 100, category_id: @category.id)
+    @payment = Payment.new(name: 'test', amount: 100)
   end
 
 
