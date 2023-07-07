@@ -1,8 +1,6 @@
-![Dheeraj logo](image.png)
-
 <a name="readme-top"></a>
 
-  <h3><b>Recipe App</b></h3>
+  <h3><b>Expensify App - Track your Expenses</b></h3>
 
 </div>
 
@@ -12,6 +10,8 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+     - [🚀 Live Demo](#live-demo)
+  - [📺 Presentation](#presentation)
   - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -26,10 +26,10 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 [Blog App] <a name="The Recipe app keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking the app should allow you to make them public so anyone can access them."></a>
+# 📖 [Budget App] <a name="is a web app that helps users categorize and manage their transactions for easy expense tracking. Stay organized and gain insights into your spending habits with this user-friendly tool."></a>
 
 
-**[Blog App]** is based on Ruby Language and Rails framework.
+**[Budget App]** is based on Ruby Language and Rails framework.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -58,7 +58,23 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[App for blog, create food and recipe post]**
+- **[User Authentication]**
+- **[Create Category for Payments]**
+- **[Add Transactions to those Categories]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo](https://.onrender.com/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 📺 Presentation <a name="presentation"></a>
+
+- [Link to video presentation]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -66,7 +82,7 @@
 
 To get a local copy up and running, follow these steps.
 
-- clone this https://github.com/enis-memic/recipe-app.git
+- clone this https://github.com/dheerajsachdeva/budget.git
 
 
 ### Prerequisites
@@ -74,6 +90,9 @@ To get a local copy up and running, follow these steps.
 In order to run this project you need:
 <ul>
     <li><a href="https://www.ruby-lang.org/en/">Ruby and Ruby on Rails</a></li>
+    <li>- [Node.js](https://nodejs.dev/en/) installed</li>
+    <li> - [PostgreSQL](https://www.postgresql.org/) database installed
+</li>
   </ul>
   
 ### Setup
@@ -81,7 +100,7 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 <ul>
 <li>cd my-folder</li>
-<li>git clone https://github.com/enis-memic/recipe-app.git</li>
+<li>git clone https://github.com/dheerajsachdeva/budget.git</li>
 </ul>
 
 ### Install
@@ -108,12 +127,6 @@ Run: rspec to run tests
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Enis Memic**
-
-- GitHub: [@enis-memic](https://github.com/enis-memic)
-- LinkedIn: [enis-memic](https://linkedin.com/in/enis-memic)
-
-
 👤 **DHEERAJ SACHDEVA**
 
 - GitHub: [@githubhandle](https://github.com/dheerajsachdeva)
@@ -135,7 +148,7 @@ Run: rspec to run tests
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [repo](https://github.com/enis-memic/recipe-app.git) 
+Feel free to check the [repo](https://github.com/dheerajsachdeva/budget.git) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -147,15 +160,19 @@ If you like this project please follow me on github
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse and my Coding partner Dheeraj
+I would like to thank Microverse and and [Gregoire Vella](https://www.behance.net/gregoirevella) for design.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
-- **[What is Recipe App?]**
+- **[What is Budget App?]**
 
-  - [In this project, we are creating recipe app. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking the app should allow you to make them public so anyone can access them.]
+  - [Budget app is a web app that helps users categorize and manage their transactions for easy expense tracking. Stay organized and gain insights into your spending habits with this user-friendly tool.]
+
+  - **Is Rails still relevant?**
+
+  - [Yes, Rails is still popular among developer](https://blog.railwaymen.org/is-ruby-on-rails-dead)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
