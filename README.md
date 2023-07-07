@@ -68,13 +68,13 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo](https://.onrender.com/)
+- [Live Demo](https://expensify-ta0p.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📺 Presentation <a name="presentation"></a>
 
-- [Link to video presentation]()
+- [Link to video presentation](https://www.loom.com/share/2330bf21ad8941ecb56ecb7ddf5c07a6?sid=c4fc0db1-ab05-497e-b0db-a0bec44db1d7)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
